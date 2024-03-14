@@ -32,14 +32,16 @@
                 <div class="card-body">
                     <div class="tab-content">
                         <div class="tab-pane show active" id="basic-form-preview">
-                            <form action="" method="POST" enctype="multipart/form-data">
+                            <form action="{{route('contest.new')}}" method="POST" enctype="multipart/form-data">
                                 @csrf
                                 <div class="row mb-3">
                                     <label for="inputEmail3" class="col-md-2 col-form-label"  >Select Category</label>
                                     <div class="col-md-10">
                                         <select class="form-control @error('category_id') is-invalid @enderror" name="category_id" >
                                             <option selected disabled >--Select Category--</option>
-                                            <option value="" >--Select Category--</option>
+                                            @foreach($categories as $category)
+                                            <option value="{{$category->id}}" >{{$category->category_name}}</option>
+                                            @endforeach
 
                                         </select>
                                         @error('category_id')
@@ -96,14 +98,6 @@
                                     </div>
                                 </div>
                                 <div class="row mb-3">
-                                    <label for="inputEmail3" class="col-md-2 col-form-label">End Date</label>
-                                    <div class="col-md-10">
-                                        <input type="date" class="form-control @error('end_date') is-invalid @enderror" name="end_date"   placeholder="End Date">
-                                        @error('stock_amount')
-                                        <div class="alert alert-danger">{{ $message }}</div>
-                                        @enderror
-                                    </div>
-                                </div><div class="row mb-3">
                                     <label for="inputEmail3" class="col-md-2 col-form-label">Start Date</label>
                                     <div class="col-md-10">
                                         <input type="date" class="form-control @error('start_date') is-invalid @enderror" name="start_date"   placeholder="Start Date">
@@ -112,23 +106,33 @@
                                         @enderror
                                     </div>
                                 </div>
+                                <div class="row mb-3">
+                                    <label for="inputEmail3" class="col-md-2 col-form-label">End Date</label>
+                                    <div class="col-md-10">
+                                        <input type="date" class="form-control @error('end_date') is-invalid @enderror" name="end_date"   placeholder="End Date">
+                                        @error('stock_amount')
+                                        <div class="alert alert-danger">{{ $message }}</div>
+                                        @enderror
+                                    </div>
+                                </div>
+
 
 
                                 <div class="row mb-3">
-                                    <label for="inputEmail3" class="col-md-2 col-form-label">Sort Description</label>
+                                    <label for="inputEmail3" class="col-md-2 col-form-label">Detail</label>
                                     <div class="col-md-10">
-                                        <textarea  class="form-control @error('sort_description') is-invalid @enderror" name="sort_description"  id="summernote3" placeholder="Product Sort Description"></textarea>
-                                        @error('sort_description')
+                                        <textarea  class="form-control @error('detail') is-invalid @enderror" name="detail"  id="summernote3" placeholder="Product Sort Description"></textarea>
+                                        @error('detail')
                                         <div class="alert alert-danger">{{ $message }}</div>
                                         @enderror
                                     </div>
                                 </div>
 
                                 <div class="row mb-3">
-                                    <label for="inputEmail3" class="col-md-2 col-form-label">Details</label>
+                                    <label for="inputEmail3" class="col-md-2 col-form-label">More Details</label>
                                     <div class="col-md-10">
-                                        <textarea  class="form-control @error('detail') is-invalid @enderror" name="detail"  id="summernote2" placeholder="Product Detail"></textarea>
-                                        @error('detail')
+                                        <textarea  class="form-control @error('more_detail') is-invalid @enderror" name="more_detail"  id="summernote2" placeholder="Product Detail"></textarea>
+                                        @error('more_detail')
                                         <div class="alert alert-danger">{{ $message }}</div>
                                         @enderror
                                     </div>

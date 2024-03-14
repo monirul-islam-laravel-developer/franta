@@ -36,4 +36,5 @@ class ContactUsController extends Controller
         Alert::Success('Cantact Us Info Update Successfully','');
         return redirect()->back();
     }
+
 }

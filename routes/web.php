@@ -22,6 +22,7 @@ use App\Http\Controllers\FaqController;
 use App\Http\Controllers\FrontAboutUs;
 use App\Http\Controllers\FrontLottaryController;
 use App\Http\Controllers\ContestController;
+use App\Http\Controllers\CartController;
 
 use App\Models\RoleRoute;
 
@@ -50,13 +51,17 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/cantact', [HomeController::class, 'cantact'])->name('cantact');
 
-Route::get('/result', [FrontResultController::class, 'index'])->name('result');
+Route::get('/winer', [FrontResultController::class, 'index'])->name('winer');
 
 Route::get('/faq', [FaqController::class, 'index'])->name('faq');
 
 Route::get('/aboutus', [FrontAboutUs::class, 'index'])->name('aboutus');
 
-Route::get('/lottery', [FrontLottaryController::class, 'index'])->name('lottery');
+Route::get('/contest', [FrontLottaryController::class, 'index'])->name('contest');
+
+Route::get('/contest-detail/{id}', [FrontLottaryController::class, 'detail'])->name('contest-detail');
+
+Route::get('/cart-page', [CartController::class, 'index'])->name('cart-page');
 
 
 Route::get('/error', function () {
@@ -150,15 +155,7 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified']
                 Route::post('/delete/{id}', [ColorController::class, 'delete'])->name('color.delete');
             });
 
-            Route::prefix('product')->group(function () {
-                Route::get('/add', [ProductController::class, 'index'])->name('product.add');
-                Route::post('/new', [ProductController::class, 'create'])->name('product.new');
-                Route::get('/manage', [ProductController::class, 'manage'])->name('product.manage');
-                Route::get('/manage/{id}{slug}', [ProductController::class, 'open'])->name('product.open');
-                Route::get('/edit/{id}/{slug}', [ProductController::class, 'edit'])->name('product.edit');
-                Route::post('/update/{id}/{slug}', [ProductController::class, 'update'])->name('product.update');
-                Route::post('/delete/{id}', [ProductController::class, 'delete'])->name('product.delete');
-            });
+
             Route::prefix('contests')->group(function () {
                 Route::get('/add', [ContestController::class, 'index'])->name('contest.add');
                 Route::post('/new', [ContestController::class, 'create'])->name('contest.new');

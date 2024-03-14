@@ -1,220 +1,1476 @@
 @extends('front.master')
 @section('title')
-    Result
+    Winner
 @endsection
 @section('body')
-    <section class="breadcrumb-area">
+    <!-- inner-hero-section start -->
+    <section class="inner-hero-section style--four">
+        <div class="bg-shape"><img src="{{asset('/')}}fronts/assets/images/elements/inner-hero-shape-2.png" alt="image"></div>
         <div class="container">
-            <div class="content">
-                <h2 class="title">
-                    Results
-                </h2>
-                <ul class="breadcrumb-list extra-padding">
-                    <li>
-                        <a href="index.html">
-                            Home
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">Results</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <!-- ==========Breadcrumb-Section========== -->
-
-    <!-- ==========Results-Section========== -->
-    <section class="results">
-        <div class="top-image">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="image">
-                            <img src="assets/images/result.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="check-number result-page">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="check-box">
-                            <h4 class="title">1. Select a Game</h4>
-                            <div class="form-area">
-                                <select>
-                                    <option value="#">Power Ball</option>
-                                    <option value="#">Megamillions</option>
-                                    <option value="#">Euromillions</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="check-box">
-                            <h4 class="title">2. Pick a Date</h4>
-                            <div class="form-area">
-                                <input type="date">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="check-box">
-                            <h4 class="title">3. Enter Your Number</h4>
-                            <div class="form-area input-round-wrapper">
-                                <input type="text" class="input-round">
-                                <input type="text" class="input-round">
-                                <input type="text" class="input-round">
-                                <input type="text" class="input-round">
-                                <input type="text" class="input-round">
-                                <input type="text" class="input-round">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="lottery-result result-page">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="result-list">
-                            <div class="single-list">
-                                <div class="light-area">
-                                    <div class="light-area-top">
-                                        <div class="left">
-                                            <img src="assets/images/d1.png" alt="">
-                                            <h4>Powerball</h4>
-                                        </div>
-                                        <div class="right">
-                                            <span>Draw took place on</span>
-                                            <h6>Saturday April 20, 2020</h6>
-                                        </div>
-                                    </div>
-                                    <div class="light-area-bottom">
-                                        <div class="left">
-                                            <p>Winning Numbers:</p>
-                                            <div class="numbers">
-                                                <span>11</span>
-                                                <span>88</span>
-                                                <span>23</span>
-                                                <span>9</span>
-                                                <span>19</span>
-                                                <span>26</span>
-                                                <span>87</span>
-                                            </div>
-                                        </div>
-                                        <div class="right">
-                                            <span>Est. Jackpot</span>
-                                            <h6>$116 M Win BTC</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="color-area">
-                                    <div class="top">
-                                        <span>Next Draw</span>
-                                        <h6>Wed, Oct 28, 2020</h6>
-                                    </div>
-                                    <div class="bottom">
-                                        <span>Est. Jackpot </span>
-                                        <h6>$116 M Win BTC</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single-list">
-                                <div class="light-area">
-                                    <div class="light-area-top">
-                                        <div class="left">
-                                            <img src="assets/images/d2.png" alt="">
-                                            <h4>Megamillions</h4>
-                                        </div>
-                                        <div class="right">
-                                            <span>Draw took place on</span>
-                                            <h6>Saturday April 20, 2020</h6>
-                                        </div>
-                                    </div>
-                                    <div class="light-area-bottom">
-                                        <div class="left">
-                                            <p>Winning Numbers:</p>
-                                            <div class="numbers">
-                                                <span>11</span>
-                                                <span>88</span>
-                                                <span>23</span>
-                                                <span>9</span>
-                                                <span>19</span>
-                                                <span>26</span>
-                                                <span>87</span>
-                                            </div>
-                                        </div>
-                                        <div class="right">
-                                            <span>Est. Jackpot</span>
-                                            <h6>$116 M Win BTC</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="color-area">
-                                    <div class="top">
-                                        <span>Next Draw</span>
-                                        <h6>Wed, Oct 28, 2020</h6>
-                                    </div>
-                                    <div class="bottom">
-                                        <span>Est. Jackpot </span>
-                                        <h6>$116 M Win BTC</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single-list">
-                                <div class="light-area">
-                                    <div class="light-area-top">
-                                        <div class="left">
-                                            <img src="assets/images/d3.png" alt="">
-                                            <h4>Euromillions</h4>
-                                        </div>
-                                        <div class="right">
-                                            <span>Draw took place on</span>
-                                            <h6>Saturday April 20, 2020</h6>
-                                        </div>
-                                    </div>
-                                    <div class="light-area-bottom">
-                                        <div class="left">
-                                            <p>Winning Numbers:</p>
-                                            <div class="numbers">
-                                                <span>11</span>
-                                                <span>88</span>
-                                                <span>23</span>
-                                                <span>9</span>
-                                                <span>19</span>
-                                                <span>26</span>
-                                                <span>87</span>
-                                            </div>
-                                        </div>
-                                        <div class="right">
-                                            <span>Est. Jackpot</span>
-                                            <h6>$116 M Win BTC</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="color-area">
-                                    <div class="top">
-                                        <span>Next Draw</span>
-                                        <h6>Wed, Oct 28, 2020</h6>
-                                    </div>
-                                    <div class="bottom">
-                                        <span>Est. Jackpot </span>
-                                        <h6>$116 M Win BTC</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-center">
-                            <a class="view-all" href="#">Load more </a>
-                        </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="inner-page-content">
+                        <h2 class="title">Never miss a draw!</h2>
+                        <p>Easy way to buy tickets and win your dream car</p>
+                        <p>many others anytime, anywhere</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- inner-hero-section end -->
+
+    <!-- winner details section start -->
+    <section class="mt-minus-150">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="winner-details-wrapper bg_img" data-background="{{asset('/')}}fronts/assets/images/elements/winner-details.jpg">
+                        <div class="left"><img src="{{asset('/')}}fronts/assets/images/contest/1.png" alt="image"></div>
+                        <div class="body">
+                            <p class="contest-number">Contest No: B2T</p>
+                            <p class="contest-date"><span>Draw took place on :</span> Saturday May 20, 2023</p>
+                            <div class="line"></div>
+                            <h4 class="title">Latest  bigest Winning Numbers:</h4>
+                            <ul class="numbers">
+                                <li>11</li>
+                                <li>88</li>
+                                <li>23</li>
+                                <li>9</li>
+                                <li>19</li>
+                                <li>26</li>
+                                <li>87</li>
+                            </ul>
+                            <div class="btn-grp">
+                                <a href="#0" class="btn-border">Alerts</a>
+                                <a href="#0" class="btn-border">How to Claim</a>
+                            </div>
+                        </div>
+                        <div class="right"><img src="{{asset('/')}}fronts/assets/images/contest/7.png" alt="image"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- winner details section end -->
+
+    <!-- latest winner section start  -->
+    <section class="latest-winner-section position-relative pt-120 pb-120">
+        <div class="el-1"><img src="{{asset('/')}}fronts/assets/images/elements/w-el-1.png" alt="image"></div>
+        <div class="el-2"><img src="{{asset('/')}}fronts/assets/images/elements/w-el-2.png" alt="image"></div>
+        <div class="el-3"><img src="{{asset('/')}}fronts/assets/images/elements/w-el-3.png" alt="image"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.3s">
+                    <div class="section-header text-center">
+                        <span class="section-sub-title">Meet the latest winners from your favorite contest</span>
+                        <h2 class="section-title">Latest Winners</h2>
+                        <p>Check your ticket number's to see if you are a Winner in the Dream Lottery.</p>
+                    </div>
+                </div>
+            </div><!-- row end -->
+
+            <div class="row wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">
+                <div class="col-lg-12">
+                    <ul class="nav nav-tabs winner-tab-nav" id="winnerTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="dream-tab" data-bs-toggle="tab" data-bs-target="#dream" role="tab" aria-controls="dream" aria-selected="true">
+                                <div class="icon-thumb"><img src="{{asset('/')}}fronts/assets/images/icon/winner-tab/1.png" alt="image"></div>
+                                <span>Dream Car</span>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="bike-tab" data-bs-toggle="tab" data-bs-target="#bike" role="tab" aria-controls="bike" aria-selected="false">
+                                <div class="icon-thumb"><img src="{{asset('/')}}fronts/assets/images/icon/winner-tab/2.png" alt="image"></div>
+                                <span>bike</span>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="watch-tab" data-bs-toggle="tab" data-bs-target="#watch" role="tab" aria-controls="watch" aria-selected="false">
+                                <div class="icon-thumb"><img src="{{asset('/')}}fronts/assets/images/icon/winner-tab/3.png" alt="image"></div>
+                                <span>watch</span>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="laptop-tab" data-bs-toggle="tab" data-bs-target="#laptop" role="tab" aria-controls="laptop" aria-selected="false">
+                                <div class="icon-thumb"><img src="{{asset('/')}}fronts/assets/images/icon/winner-tab/4.png" alt="image"></div>
+                                <span>laptop</span>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="money-tab" data-bs-toggle="tab" data-bs-target="#money" role="tab" aria-controls="money" aria-selected="false">
+                                <div class="icon-thumb"><img src="{{asset('/')}}fronts/assets/images/icon/winner-tab/5.png" alt="image"></div>
+                                <span>Money</span>
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="tab-content mt-50" id="winnerTabContent">
+                        <div class="tab-pane fade show active" id="dream" role="tabpanel" aria-labelledby="dream-tab">
+                            <div class="row mb-none-30">
+                                <div class="col-lg-4 mb-30">
+                                    <div class="number-check-wrapper">
+                                        <h3 class="title">Check My Numbers</h3>
+                                        <p>Are you holding on to a winning ticket? Here's an easy way to find out.</p>
+                                        <form class="check-number-form">
+                                            <input type="tel" class="form-control mt-30 mb-30" name="check-number1" id="check-number1" placeholder="Enter Contest No">
+                                            <div class="number-list-wrapper">
+                                                <p>Enter Your Lottery Numbers</p>
+                                                <div class="number-list mt-3 mb-3">
+                                                    <input type="text" name="text1" id="text1" placeholder="00">
+                                                    <input type="text" name="text2" id="text2" placeholder="00">
+                                                    <input type="text" name="text3" id="text3" placeholder="00">
+                                                    <input type="text" name="text4" id="text4" placeholder="00">
+                                                    <input type="text" name="text5" id="text5" placeholder="00">
+                                                    <input type="text" name="text6" id="text6" placeholder="00">
+                                                    <input type="text" name="text7" id="text7" placeholder="00">
+                                                </div><!-- number-list end -->
+                                                <select class="nice-select">
+                                                    <option>Last 7 days</option>
+                                                    <option>Last 6 days</option>
+                                                    <option>Last 5 days</option>
+                                                    <option>Last 4 days</option>
+                                                    <option>Last 3 days</option>
+                                                </select>
+                                                <div class="text-center mt-100">
+                                                    <button type="submit" class="cmn-btn">check my numbers</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 mb-30">
+                                    <div class="winner-card mb-30">
+                                        <div class="winner-card__thumb">
+                                            <img src="{{asset('/')}}fronts/assets/images/win-car/6.png" alt="image">
+                                        </div>
+                                        <div class="winner-card__content">
+                                            <div class="winner-thumb"><img src="{{asset('/')}}fronts/assets/images/winner/1.png" alt="image"></div>
+                                            <div class="content-top">
+                                                <div class="left">
+                                                    <h5>The Breeze Zodiac IX</h5>
+                                                </div>
+                                                <div class="right">
+                                                    <span>Draw took place on</span>
+                                                    <p>Saturday April 20, 2023</p>
+                                                </div>
+                                            </div>
+                                            <div class="content-bottom">
+                                                <div class="number-list-wrapper">
+                                                    <p>Winning Numbers:</p>
+                                                    <ul class="number-list mt-2">
+                                                        <li>11</li>
+                                                        <li>88</li>
+                                                        <li>23</li>
+                                                        <li>9</li>
+                                                        <li>19</li>
+                                                        <li>26</li>
+                                                        <li>87</li>
+                                                    </ul><!-- number-list end -->
+                                                </div>
+                                                <div class="right">
+                                                    <p>Contest No:</p>
+                                                    <span class="contest-num">B2T</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- winner-card end -->
+                                    <div class="winner-card mb-30">
+                                        <div class="winner-card__thumb">
+                                            <img src="{{asset('/')}}fronts/assets/images/win-car/4.png" alt="image">
+                                        </div>
+                                        <div class="winner-card__content">
+                                            <div class="winner-thumb"><img src="{{asset('/')}}fronts/assets/images/winner/2.png" alt="image"></div>
+                                            <div class="content-top">
+                                                <div class="left">
+                                                    <h5>The Breeze Zodiac IX</h5>
+                                                </div>
+                                                <div class="right">
+                                                    <span>Draw took place on</span>
+                                                    <p>Saturday April 20, 2023</p>
+                                                </div>
+                                            </div>
+                                            <div class="content-bottom">
+                                                <div class="number-list-wrapper">
+                                                    <p>Winning Numbers:</p>
+                                                    <ul class="number-list mt-2">
+                                                        <li>11</li>
+                                                        <li>88</li>
+                                                        <li>23</li>
+                                                        <li>9</li>
+                                                        <li>19</li>
+                                                        <li>26</li>
+                                                        <li>87</li>
+                                                    </ul><!-- number-list end -->
+                                                </div>
+                                                <div class="right">
+                                                    <p>Contest No:</p>
+                                                    <span class="contest-num">B2T</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- winner-card end -->
+                                    <div class="winner-card mb-30">
+                                        <div class="winner-card__thumb">
+                                            <img src="{{asset('/')}}fronts/assets/images/win-car/3.png" alt="image">
+                                        </div>
+                                        <div class="winner-card__content">
+                                            <div class="winner-thumb"><img src="{{asset('/')}}fronts/assets/images/winner/3.png" alt="image"></div>
+                                            <div class="content-top">
+                                                <div class="left">
+                                                    <h5>The Breeze Zodiac IX</h5>
+                                                </div>
+                                                <div class="right">
+                                                    <span>Draw took place on</span>
+                                                    <p>Saturday April 20, 2023</p>
+                                                </div>
+                                            </div>
+                                            <div class="content-bottom">
+                                                <div class="number-list-wrapper">
+                                                    <p>Winning Numbers:</p>
+                                                    <ul class="number-list mt-2">
+                                                        <li>11</li>
+                                                        <li>88</li>
+                                                        <li>23</li>
+                                                        <li>9</li>
+                                                        <li>19</li>
+                                                        <li>26</li>
+                                                        <li>87</li>
+                                                    </ul><!-- number-list end -->
+                                                </div>
+                                                <div class="right">
+                                                    <p>Contest No:</p>
+                                                    <span class="contest-num">B2T</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- winner-card end -->
+                                    <div class="winner-card mb-30">
+                                        <div class="winner-card__thumb">
+                                            <img src="{{asset('/')}}fronts/assets/images/win-car/4.png" alt="image">
+                                        </div>
+                                        <div class="winner-card__content">
+                                            <div class="winner-thumb"><img src="{{asset('/')}}fronts/assets/images/winner/4.png" alt="image"></div>
+                                            <div class="content-top">
+                                                <div class="left">
+                                                    <h5>The Breeze Zodiac IX</h5>
+                                                </div>
+                                                <div class="right">
+                                                    <span>Draw took place on</span>
+                                                    <p>Saturday April 20, 2023</p>
+                                                </div>
+                                            </div>
+                                            <div class="content-bottom">
+                                                <div class="number-list-wrapper">
+                                                    <p>Winning Numbers:</p>
+                                                    <ul class="number-list mt-2">
+                                                        <li>11</li>
+                                                        <li>88</li>
+                                                        <li>23</li>
+                                                        <li>9</li>
+                                                        <li>19</li>
+                                                        <li>26</li>
+                                                        <li>87</li>
+                                                    </ul><!-- number-list end -->
+                                                </div>
+                                                <div class="right">
+                                                    <p>Contest No:</p>
+                                                    <span class="contest-num">B2T</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- winner-card end -->
+                                    <div class="winner-card mb-30">
+                                        <div class="winner-card__thumb">
+                                            <img src="{{asset('/')}}fronts/assets/images/win-car/5.png" alt="image">
+                                        </div>
+                                        <div class="winner-card__content">
+                                            <div class="winner-thumb"><img src="{{asset('/')}}fronts/assets/images/winner/5.png" alt="image"></div>
+                                            <div class="content-top">
+                                                <div class="left">
+                                                    <h5>The Breeze Zodiac IX</h5>
+                                                </div>
+                                                <div class="right">
+                                                    <span>Draw took place on</span>
+                                                    <p>Saturday April 20, 2023</p>
+                                                </div>
+                                            </div>
+                                            <div class="content-bottom">
+                                                <div class="number-list-wrapper">
+                                                    <p>Winning Numbers:</p>
+                                                    <ul class="number-list mt-2">
+                                                        <li>11</li>
+                                                        <li>88</li>
+                                                        <li>23</li>
+                                                        <li>9</li>
+                                                        <li>19</li>
+                                                        <li>26</li>
+                                                        <li>87</li>
+                                                    </ul><!-- number-list end -->
+                                                </div>
+                                                <div class="right">
+                                                    <p>Contest No:</p>
+                                                    <span class="contest-num">B2T</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- winner-card end -->
+                                    <div class="winner-card mb-30">
+                                        <div class="winner-card__thumb">
+                                            <img src="{{asset('/')}}fronts/assets/images/win-car/6.png" alt="image">
+                                        </div>
+                                        <div class="winner-card__content">
+                                            <div class="winner-thumb"><img src="{{asset('/')}}fronts/assets/images/winner/6.png" alt="image"></div>
+                                            <div class="content-top">
+                                                <div class="left">
+                                                    <h5>The Breeze Zodiac IX</h5>
+                                                </div>
+                                                <div class="right">
+                                                    <span>Draw took place on</span>
+                                                    <p>Saturday April 20, 2023</p>
+                                                </div>
+                                            </div>
+                                            <div class="content-bottom">
+                                                <div class="number-list-wrapper">
+                                                    <p>Winning Numbers:</p>
+                                                    <ul class="number-list mt-2">
+                                                        <li>11</li>
+                                                        <li>88</li>
+                                                        <li>23</li>
+                                                        <li>9</li>
+                                                        <li>19</li>
+                                                        <li>26</li>
+                                                        <li>87</li>
+                                                    </ul><!-- number-list end -->
+                                                </div>
+                                                <div class="right">
+                                                    <p>Contest No:</p>
+                                                    <span class="contest-num">B2T</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- winner-card end -->
+                                    <div class="btn-grp">
+                                        <a href="winner.html" class="btn-border">browse more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="bike" role="tabpanel" aria-labelledby="bike-tab">
+                            <div class="row mb-none-30">
+                                <div class="col-lg-4 mb-30">
+                                    <div class="number-check-wrapper">
+                                        <h3 class="title">Check My Numbers</h3>
+                                        <p>Are you holding on to a winning ticket? Here's an easy way to find out.</p>
+                                        <form class="check-number-form">
+                                            <input type="tel" class="form-control mt-30 mb-30" name="check-number2" id="check-number2" placeholder="Enter Contest No">
+                                            <div class="number-list-wrapper">
+                                                <p>Enter Your Lottery Numbers</p>
+                                                <div class="number-list mt-3 mb-3">
+                                                    <input type="text" name="text8" id="text8" placeholder="00">
+                                                    <input type="text" name="text9" id="text9" placeholder="00">
+                                                    <input type="text" name="text10" id="text10" placeholder="00">
+                                                    <input type="text" name="text11" id="text11" placeholder="00">
+                                                    <input type="text" name="text12" id="text12" placeholder="00">
+                                                    <input type="text" name="text13" id="text13" placeholder="00">
+                                                    <input type="text" name="text14" id="text14" placeholder="00">
+                                                </div><!-- number-list end -->
+                                                <select class="nice-select">
+                                                    <option>Last 7 days</option>
+                                                    <option>Last 6 days</option>
+                                                    <option>Last 5 days</option>
+                                                    <option>Last 4 days</option>
+                                                    <option>Last 3 days</option>
+                                                </select>
+                                                <div class="text-center mt-100">
+                                                    <button type="submit" class="cmn-btn">check my numbers</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 mb-30">
+                                    <div class="winner-card mb-30">
+                                        <div class="winner-card__thumb">
+                                            <img src="{{asset('/')}}fronts/assets/images/win-car/5.png" alt="image">
+                                        </div>
+                                        <div class="winner-card__content">
+                                            <div class="winner-thumb"><img src="{{asset('/')}}fronts/assets/images/winner/1.png" alt="image"></div>
+                                            <div class="content-top">
+                                                <div class="left">
+                                                    <h5>The Breeze Zodiac IX</h5>
+                                                </div>
+                                                <div class="right">
+                                                    <span>Draw took place on</span>
+                                                    <p>Saturday April 20, 2023</p>
+                                                </div>
+                                            </div>
+                                            <div class="content-bottom">
+                                                <div class="number-list-wrapper">
+                                                    <p>Winning Numbers:</p>
+                                                    <ul class="number-list mt-2">
+                                                        <li>11</li>
+                                                        <li>88</li>
+                                                        <li>23</li>
+                                                        <li>9</li>
+                                                        <li>19</li>
+                                                        <li>26</li>
+                                                        <li>87</li>
+                                                    </ul><!-- number-list end -->
+                                                </div>
+                                                <div class="right">
+                                                    <p>Contest No:</p>
+                                                    <span class="contest-num">B2T</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- winner-card end -->
+                                    <div class="winner-card mb-30">
+                                        <div class="winner-card__thumb">
+                                            <img src="{{asset('/')}}fronts/assets/images/win-car/6.png" alt="image">
+                                        </div>
+                                        <div class="winner-card__content">
+                                            <div class="winner-thumb"><img src="{{asset('/')}}fronts/assets/images/winner/2.png" alt="image"></div>
+                                            <div class="content-top">
+                                                <div class="left">
+                                                    <h5>The Breeze Zodiac IX</h5>
+                                                </div>
+                                                <div class="right">
+                                                    <span>Draw took place on</span>
+                                                    <p>Saturday April 20, 2023</p>
+                                                </div>
+                                            </div>
+                                            <div class="content-bottom">
+                                                <div class="number-list-wrapper">
+                                                    <p>Winning Numbers:</p>
+                                                    <ul class="number-list mt-2">
+                                                        <li>11</li>
+                                                        <li>88</li>
+                                                        <li>23</li>
+                                                        <li>9</li>
+                                                        <li>19</li>
+                                                        <li>26</li>
+                                                        <li>87</li>
+                                                    </ul><!-- number-list end -->
+                                                </div>
+                                                <div class="right">
+                                                    <p>Contest No:</p>
+                                                    <span class="contest-num">B2T</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- winner-card end -->
+                                    <div class="winner-card mb-30">
+                                        <div class="winner-card__thumb">
+                                            <img src="{{asset('/')}}fronts/assets/images/win-car/3.png" alt="image">
+                                        </div>
+                                        <div class="winner-card__content">
+                                            <div class="winner-thumb"><img src="{{asset('/')}}fronts/assets/images/winner/3.png" alt="image"></div>
+                                            <div class="content-top">
+                                                <div class="left">
+                                                    <h5>The Breeze Zodiac IX</h5>
+                                                </div>
+                                                <div class="right">
+                                                    <span>Draw took place on</span>
+                                                    <p>Saturday April 20, 2023</p>
+                                                </div>
+                                            </div>
+                                            <div class="content-bottom">
+                                                <div class="number-list-wrapper">
+                                                    <p>Winning Numbers:</p>
+                                                    <ul class="number-list mt-2">
+                                                        <li>11</li>
+                                                        <li>88</li>
+                                                        <li>23</li>
+                                                        <li>9</li>
+                                                        <li>19</li>
+                                                        <li>26</li>
+                                                        <li>87</li>
+                                                    </ul><!-- number-list end -->
+                                                </div>
+                                                <div class="right">
+                                                    <p>Contest No:</p>
+                                                    <span class="contest-num">B2T</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- winner-card end -->
+                                    <div class="winner-card mb-30">
+                                        <div class="winner-card__thumb">
+                                            <img src="{{asset('/')}}fronts/assets/images/win-car/4.png" alt="image">
+                                        </div>
+                                        <div class="winner-card__content">
+                                            <div class="winner-thumb"><img src="{{asset('/')}}fronts/assets/images/winner/4.png" alt="image"></div>
+                                            <div class="content-top">
+                                                <div class="left">
+                                                    <h5>The Breeze Zodiac IX</h5>
+                                                </div>
+                                                <div class="right">
+                                                    <span>Draw took place on</span>
+                                                    <p>Saturday April 20, 2023</p>
+                                                </div>
+                                            </div>
+                                            <div class="content-bottom">
+                                                <div class="number-list-wrapper">
+                                                    <p>Winning Numbers:</p>
+                                                    <ul class="number-list mt-2">
+                                                        <li>11</li>
+                                                        <li>88</li>
+                                                        <li>23</li>
+                                                        <li>9</li>
+                                                        <li>19</li>
+                                                        <li>26</li>
+                                                        <li>87</li>
+                                                    </ul><!-- number-list end -->
+                                                </div>
+                                                <div class="right">
+                                                    <p>Contest No:</p>
+                                                    <span class="contest-num">B2T</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- winner-card end -->
+                                    <div class="winner-card mb-30">
+                                        <div class="winner-card__thumb">
+                                            <img src="{{asset('/')}}fronts/assets/images/win-car/5.png" alt="image">
+                                        </div>
+                                        <div class="winner-card__content">
+                                            <div class="winner-thumb"><img src="{{asset('/')}}fronts/assets/images/winner/5.png" alt="image"></div>
+                                            <div class="content-top">
+                                                <div class="left">
+                                                    <h5>The Breeze Zodiac IX</h5>
+                                                </div>
+                                                <div class="right">
+                                                    <span>Draw took place on</span>
+                                                    <p>Saturday April 20, 2023</p>
+                                                </div>
+                                            </div>
+                                            <div class="content-bottom">
+                                                <div class="number-list-wrapper">
+                                                    <p>Winning Numbers:</p>
+                                                    <ul class="number-list mt-2">
+                                                        <li>11</li>
+                                                        <li>88</li>
+                                                        <li>23</li>
+                                                        <li>9</li>
+                                                        <li>19</li>
+                                                        <li>26</li>
+                                                        <li>87</li>
+                                                    </ul><!-- number-list end -->
+                                                </div>
+                                                <div class="right">
+                                                    <p>Contest No:</p>
+                                                    <span class="contest-num">B2T</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- winner-card end -->
+                                    <div class="winner-card mb-30">
+                                        <div class="winner-card__thumb">
+                                            <img src="{{asset('/')}}fronts/assets/images/win-car/6.png" alt="image">
+                                        </div>
+                                        <div class="winner-card__content">
+                                            <div class="winner-thumb"><img src="{{asset('/')}}fronts/assets/images/winner/6.png" alt="image"></div>
+                                            <div class="content-top">
+                                                <div class="left">
+                                                    <h5>The Breeze Zodiac IX</h5>
+                                                </div>
+                                                <div class="right">
+                                                    <span>Draw took place on</span>
+                                                    <p>Saturday April 20, 2023</p>
+                                                </div>
+                                            </div>
+                                            <div class="content-bottom">
+                                                <div class="number-list-wrapper">
+                                                    <p>Winning Numbers:</p>
+                                                    <ul class="number-list mt-2">
+                                                        <li>11</li>
+                                                        <li>88</li>
+                                                        <li>23</li>
+                                                        <li>9</li>
+                                                        <li>19</li>
+                                                        <li>26</li>
+                                                        <li>87</li>
+                                                    </ul><!-- number-list end -->
+                                                </div>
+                                                <div class="right">
+                                                    <p>Contest No:</p>
+                                                    <span class="contest-num">B2T</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- winner-card end -->
+                                    <div class="btn-grp">
+                                        <a href="winner.html" class="btn-border">browse more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="watch" role="tabpanel" aria-labelledby="watch-tab">
+                            <div class="row mb-none-30">
+                                <div class="col-lg-4 mb-30">
+                                    <div class="number-check-wrapper">
+                                        <h3 class="title">Check My Numbers</h3>
+                                        <p>Are you holding on to a winning ticket? Here's an easy way to find out.</p>
+                                        <form class="check-number-form">
+                                            <input type="tel" class="form-control mt-30 mb-30" name="check-number3" id="check-number3" placeholder="Enter Contest No">
+                                            <div class="number-list-wrapper">
+                                                <p>Enter Your Lottery Numbers</p>
+                                                <div class="number-list mt-3 mb-3">
+                                                    <input type="text" name="text15" id="text15" placeholder="00">
+                                                    <input type="text" name="text16" id="text16" placeholder="00">
+                                                    <input type="text" name="text17" id="text17" placeholder="00">
+                                                    <input type="text" name="text18" id="text18" placeholder="00">
+                                                    <input type="text" name="text19" id="text19" placeholder="00">
+                                                    <input type="text" name="text20" id="text20" placeholder="00">
+                                                    <input type="text" name="text21" id="text21" placeholder="00">
+                                                </div><!-- number-list end -->
+                                                <select class="nice-select">
+                                                    <option>Last 7 days</option>
+                                                    <option>Last 6 days</option>
+                                                    <option>Last 5 days</option>
+                                                    <option>Last 4 days</option>
+                                                    <option>Last 3 days</option>
+                                                </select>
+                                                <div class="text-center mt-100">
+                                                    <button type="submit" class="cmn-btn">check my numbers</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 mb-30">
+                                    <div class="winner-card mb-30">
+                                        <div class="winner-card__thumb">
+                                            <img src="{{asset('/')}}fronts/assets/images/win-car/3.png" alt="image">
+                                        </div>
+                                        <div class="winner-card__content">
+                                            <div class="winner-thumb"><img src="{{asset('/')}}fronts/assets/images/winner/1.png" alt="image"></div>
+                                            <div class="content-top">
+                                                <div class="left">
+                                                    <h5>The Breeze Zodiac IX</h5>
+                                                </div>
+                                                <div class="right">
+                                                    <span>Draw took place on</span>
+                                                    <p>Saturday April 20, 2023</p>
+                                                </div>
+                                            </div>
+                                            <div class="content-bottom">
+                                                <div class="number-list-wrapper">
+                                                    <p>Winning Numbers:</p>
+                                                    <ul class="number-list mt-2">
+                                                        <li>11</li>
+                                                        <li>88</li>
+                                                        <li>23</li>
+                                                        <li>9</li>
+                                                        <li>19</li>
+                                                        <li>26</li>
+                                                        <li>87</li>
+                                                    </ul><!-- number-list end -->
+                                                </div>
+                                                <div class="right">
+                                                    <p>Contest No:</p>
+                                                    <span class="contest-num">B2T</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- winner-card end -->
+                                    <div class="winner-card mb-30">
+                                        <div class="winner-card__thumb">
+                                            <img src="{{asset('/')}}fronts/assets/images/win-car/2.png" alt="image">
+                                        </div>
+                                        <div class="winner-card__content">
+                                            <div class="winner-thumb"><img src="{{asset('/')}}fronts/assets/images/winner/2.png" alt="image"></div>
+                                            <div class="content-top">
+                                                <div class="left">
+                                                    <h5>The Breeze Zodiac IX</h5>
+                                                </div>
+                                                <div class="right">
+                                                    <span>Draw took place on</span>
+                                                    <p>Saturday April 20, 2023</p>
+                                                </div>
+                                            </div>
+                                            <div class="content-bottom">
+                                                <div class="number-list-wrapper">
+                                                    <p>Winning Numbers:</p>
+                                                    <ul class="number-list mt-2">
+                                                        <li>11</li>
+                                                        <li>88</li>
+                                                        <li>23</li>
+                                                        <li>9</li>
+                                                        <li>19</li>
+                                                        <li>26</li>
+                                                        <li>87</li>
+                                                    </ul><!-- number-list end -->
+                                                </div>
+                                                <div class="right">
+                                                    <p>Contest No:</p>
+                                                    <span class="contest-num">B2T</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- winner-card end -->
+                                    <div class="winner-card mb-30">
+                                        <div class="winner-card__thumb">
+                                            <img src="{{asset('/')}}fronts/assets/images/win-car/3.png" alt="image">
+                                        </div>
+                                        <div class="winner-card__content">
+                                            <div class="winner-thumb"><img src="{{asset('/')}}fronts/assets/images/winner/3.png" alt="image"></div>
+                                            <div class="content-top">
+                                                <div class="left">
+                                                    <h5>The Breeze Zodiac IX</h5>
+                                                </div>
+                                                <div class="right">
+                                                    <span>Draw took place on</span>
+                                                    <p>Saturday April 20, 2023</p>
+                                                </div>
+                                            </div>
+                                            <div class="content-bottom">
+                                                <div class="number-list-wrapper">
+                                                    <p>Winning Numbers:</p>
+                                                    <ul class="number-list mt-2">
+                                                        <li>11</li>
+                                                        <li>88</li>
+                                                        <li>23</li>
+                                                        <li>9</li>
+                                                        <li>19</li>
+                                                        <li>26</li>
+                                                        <li>87</li>
+                                                    </ul><!-- number-list end -->
+                                                </div>
+                                                <div class="right">
+                                                    <p>Contest No:</p>
+                                                    <span class="contest-num">B2T</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- winner-card end -->
+                                    <div class="winner-card mb-30">
+                                        <div class="winner-card__thumb">
+                                            <img src="{{asset('/')}}fronts/assets/images/win-car/4.png" alt="image">
+                                        </div>
+                                        <div class="winner-card__content">
+                                            <div class="winner-thumb"><img src="{{asset('/')}}fronts/assets/images/winner/4.png" alt="image"></div>
+                                            <div class="content-top">
+                                                <div class="left">
+                                                    <h5>The Breeze Zodiac IX</h5>
+                                                </div>
+                                                <div class="right">
+                                                    <span>Draw took place on</span>
+                                                    <p>Saturday April 20, 2023</p>
+                                                </div>
+                                            </div>
+                                            <div class="content-bottom">
+                                                <div class="number-list-wrapper">
+                                                    <p>Winning Numbers:</p>
+                                                    <ul class="number-list mt-2">
+                                                        <li>11</li>
+                                                        <li>88</li>
+                                                        <li>23</li>
+                                                        <li>9</li>
+                                                        <li>19</li>
+                                                        <li>26</li>
+                                                        <li>87</li>
+                                                    </ul><!-- number-list end -->
+                                                </div>
+                                                <div class="right">
+                                                    <p>Contest No:</p>
+                                                    <span class="contest-num">B2T</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- winner-card end -->
+                                    <div class="winner-card mb-30">
+                                        <div class="winner-card__thumb">
+                                            <img src="{{asset('/')}}fronts/assets/images/win-car/5.png" alt="image">
+                                        </div>
+                                        <div class="winner-card__content">
+                                            <div class="winner-thumb"><img src="{{asset('/')}}fronts/assets/images/winner/5.png" alt="image"></div>
+                                            <div class="content-top">
+                                                <div class="left">
+                                                    <h5>The Breeze Zodiac IX</h5>
+                                                </div>
+                                                <div class="right">
+                                                    <span>Draw took place on</span>
+                                                    <p>Saturday April 20, 2023</p>
+                                                </div>
+                                            </div>
+                                            <div class="content-bottom">
+                                                <div class="number-list-wrapper">
+                                                    <p>Winning Numbers:</p>
+                                                    <ul class="number-list mt-2">
+                                                        <li>11</li>
+                                                        <li>88</li>
+                                                        <li>23</li>
+                                                        <li>9</li>
+                                                        <li>19</li>
+                                                        <li>26</li>
+                                                        <li>87</li>
+                                                    </ul><!-- number-list end -->
+                                                </div>
+                                                <div class="right">
+                                                    <p>Contest No:</p>
+                                                    <span class="contest-num">B2T</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- winner-card end -->
+                                    <div class="winner-card mb-30">
+                                        <div class="winner-card__thumb">
+                                            <img src="{{asset('/')}}fronts/assets/images/win-car/6.png" alt="image">
+                                        </div>
+                                        <div class="winner-card__content">
+                                            <div class="winner-thumb"><img src="{{asset('/')}}fronts/assets/images/winner/6.png" alt="image"></div>
+                                            <div class="content-top">
+                                                <div class="left">
+                                                    <h5>The Breeze Zodiac IX</h5>
+                                                </div>
+                                                <div class="right">
+                                                    <span>Draw took place on</span>
+                                                    <p>Saturday April 20, 2023</p>
+                                                </div>
+                                            </div>
+                                            <div class="content-bottom">
+                                                <div class="number-list-wrapper">
+                                                    <p>Winning Numbers:</p>
+                                                    <ul class="number-list mt-2">
+                                                        <li>11</li>
+                                                        <li>88</li>
+                                                        <li>23</li>
+                                                        <li>9</li>
+                                                        <li>19</li>
+                                                        <li>26</li>
+                                                        <li>87</li>
+                                                    </ul><!-- number-list end -->
+                                                </div>
+                                                <div class="right">
+                                                    <p>Contest No:</p>
+                                                    <span class="contest-num">B2T</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- winner-card end -->
+                                    <div class="btn-grp">
+                                        <a href="winner.html" class="btn-border">browse more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="laptop" role="tabpanel" aria-labelledby="laptop-tab">
+                            <div class="row mb-none-30">
+                                <div class="col-lg-4 mb-30">
+                                    <div class="number-check-wrapper">
+                                        <h3 class="title">Check My Numbers</h3>
+                                        <p>Are you holding on to a winning ticket? Here's an easy way to find out.</p>
+                                        <form class="check-number-form">
+                                            <input type="tel" class="form-control mt-30 mb-30" name="check-number4" id="check-number4" placeholder="Enter Contest No">
+                                            <div class="number-list-wrapper">
+                                                <p>Enter Your Lottery Numbers</p>
+                                                <div class="number-list mt-3 mb-3">
+                                                    <input type="text" name="text22" id="text22" placeholder="00">
+                                                    <input type="text" name="text23" id="text23" placeholder="00">
+                                                    <input type="text" name="text24" id="text24" placeholder="00">
+                                                    <input type="text" name="text25" id="text25" placeholder="00">
+                                                    <input type="text" name="text26" id="text26" placeholder="00">
+                                                    <input type="text" name="text27" id="text27" placeholder="00">
+                                                    <input type="text" name="text28" id="text28" placeholder="00">
+                                                </div><!-- number-list end -->
+                                                <select class="nice-select">
+                                                    <option>Last 7 days</option>
+                                                    <option>Last 6 days</option>
+                                                    <option>Last 5 days</option>
+                                                    <option>Last 4 days</option>
+                                                    <option>Last 3 days</option>
+                                                </select>
+                                                <div class="text-center mt-100">
+                                                    <button type="submit" class="cmn-btn">check my numbers</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 mb-30">
+                                    <div class="winner-card mb-30">
+                                        <div class="winner-card__thumb">
+                                            <img src="{{asset('/')}}fronts/assets/images/win-car/1.png" alt="image">
+                                        </div>
+                                        <div class="winner-card__content">
+                                            <div class="winner-thumb"><img src="{{asset('/')}}fronts/assets/images/winner/1.png" alt="image"></div>
+                                            <div class="content-top">
+                                                <div class="left">
+                                                    <h5>The Breeze Zodiac IX</h5>
+                                                </div>
+                                                <div class="right">
+                                                    <span>Draw took place on</span>
+                                                    <p>Saturday April 20, 2023</p>
+                                                </div>
+                                            </div>
+                                            <div class="content-bottom">
+                                                <div class="number-list-wrapper">
+                                                    <p>Winning Numbers:</p>
+                                                    <ul class="number-list mt-2">
+                                                        <li>11</li>
+                                                        <li>88</li>
+                                                        <li>23</li>
+                                                        <li>9</li>
+                                                        <li>19</li>
+                                                        <li>26</li>
+                                                        <li>87</li>
+                                                    </ul><!-- number-list end -->
+                                                </div>
+                                                <div class="right">
+                                                    <p>Contest No:</p>
+                                                    <span class="contest-num">B2T</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- winner-card end -->
+                                    <div class="winner-card mb-30">
+                                        <div class="winner-card__thumb">
+                                            <img src="{{asset('/')}}fronts/assets/images/win-car/2.png" alt="image">
+                                        </div>
+                                        <div class="winner-card__content">
+                                            <div class="winner-thumb"><img src="{{asset('/')}}fronts/assets/images/winner/2.png" alt="image"></div>
+                                            <div class="content-top">
+                                                <div class="left">
+                                                    <h5>The Breeze Zodiac IX</h5>
+                                                </div>
+                                                <div class="right">
+                                                    <span>Draw took place on</span>
+                                                    <p>Saturday April 20, 2023</p>
+                                                </div>
+                                            </div>
+                                            <div class="content-bottom">
+                                                <div class="number-list-wrapper">
+                                                    <p>Winning Numbers:</p>
+                                                    <ul class="number-list mt-2">
+                                                        <li>11</li>
+                                                        <li>88</li>
+                                                        <li>23</li>
+                                                        <li>9</li>
+                                                        <li>19</li>
+                                                        <li>26</li>
+                                                        <li>87</li>
+                                                    </ul><!-- number-list end -->
+                                                </div>
+                                                <div class="right">
+                                                    <p>Contest No:</p>
+                                                    <span class="contest-num">B2T</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- winner-card end -->
+                                    <div class="winner-card mb-30">
+                                        <div class="winner-card__thumb">
+                                            <img src="{{asset('/')}}fronts/assets/images/win-car/3.png" alt="image">
+                                        </div>
+                                        <div class="winner-card__content">
+                                            <div class="winner-thumb"><img src="{{asset('/')}}fronts/assets/images/winner/3.png" alt="image"></div>
+                                            <div class="content-top">
+                                                <div class="left">
+                                                    <h5>The Breeze Zodiac IX</h5>
+                                                </div>
+                                                <div class="right">
+                                                    <span>Draw took place on</span>
+                                                    <p>Saturday April 20, 2023</p>
+                                                </div>
+                                            </div>
+                                            <div class="content-bottom">
+                                                <div class="number-list-wrapper">
+                                                    <p>Winning Numbers:</p>
+                                                    <ul class="number-list mt-2">
+                                                        <li>11</li>
+                                                        <li>88</li>
+                                                        <li>23</li>
+                                                        <li>9</li>
+                                                        <li>19</li>
+                                                        <li>26</li>
+                                                        <li>87</li>
+                                                    </ul><!-- number-list end -->
+                                                </div>
+                                                <div class="right">
+                                                    <p>Contest No:</p>
+                                                    <span class="contest-num">B2T</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- winner-card end -->
+                                    <div class="winner-card mb-30">
+                                        <div class="winner-card__thumb">
+                                            <img src="{{asset('/')}}fronts/assets/images/win-car/4.png" alt="image">
+                                        </div>
+                                        <div class="winner-card__content">
+                                            <div class="winner-thumb"><img src="{{asset('/')}}fronts/assets/images/winner/4.png" alt="image"></div>
+                                            <div class="content-top">
+                                                <div class="left">
+                                                    <h5>The Breeze Zodiac IX</h5>
+                                                </div>
+                                                <div class="right">
+                                                    <span>Draw took place on</span>
+                                                    <p>Saturday April 20, 2023</p>
+                                                </div>
+                                            </div>
+                                            <div class="content-bottom">
+                                                <div class="number-list-wrapper">
+                                                    <p>Winning Numbers:</p>
+                                                    <ul class="number-list mt-2">
+                                                        <li>11</li>
+                                                        <li>88</li>
+                                                        <li>23</li>
+                                                        <li>9</li>
+                                                        <li>19</li>
+                                                        <li>26</li>
+                                                        <li>87</li>
+                                                    </ul><!-- number-list end -->
+                                                </div>
+                                                <div class="right">
+                                                    <p>Contest No:</p>
+                                                    <span class="contest-num">B2T</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- winner-card end -->
+                                    <div class="winner-card mb-30">
+                                        <div class="winner-card__thumb">
+                                            <img src="{{asset('/')}}fronts/assets/images/win-car/5.png" alt="image">
+                                        </div>
+                                        <div class="winner-card__content">
+                                            <div class="winner-thumb"><img src="{{asset('/')}}fronts/assets/images/winner/5.png" alt="image"></div>
+                                            <div class="content-top">
+                                                <div class="left">
+                                                    <h5>The Breeze Zodiac IX</h5>
+                                                </div>
+                                                <div class="right">
+                                                    <span>Draw took place on</span>
+                                                    <p>Saturday April 20, 2023</p>
+                                                </div>
+                                            </div>
+                                            <div class="content-bottom">
+                                                <div class="number-list-wrapper">
+                                                    <p>Winning Numbers:</p>
+                                                    <ul class="number-list mt-2">
+                                                        <li>11</li>
+                                                        <li>88</li>
+                                                        <li>23</li>
+                                                        <li>9</li>
+                                                        <li>19</li>
+                                                        <li>26</li>
+                                                        <li>87</li>
+                                                    </ul><!-- number-list end -->
+                                                </div>
+                                                <div class="right">
+                                                    <p>Contest No:</p>
+                                                    <span class="contest-num">B2T</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- winner-card end -->
+                                    <div class="winner-card mb-30">
+                                        <div class="winner-card__thumb">
+                                            <img src="{{asset('/')}}fronts/assets/images/win-car/6.png" alt="image">
+                                        </div>
+                                        <div class="winner-card__content">
+                                            <div class="winner-thumb"><img src="{{asset('/')}}fronts/assets/images/winner/6.png" alt="image"></div>
+                                            <div class="content-top">
+                                                <div class="left">
+                                                    <h5>The Breeze Zodiac IX</h5>
+                                                </div>
+                                                <div class="right">
+                                                    <span>Draw took place on</span>
+                                                    <p>Saturday April 20, 2023</p>
+                                                </div>
+                                            </div>
+                                            <div class="content-bottom">
+                                                <div class="number-list-wrapper">
+                                                    <p>Winning Numbers:</p>
+                                                    <ul class="number-list mt-2">
+                                                        <li>11</li>
+                                                        <li>88</li>
+                                                        <li>23</li>
+                                                        <li>9</li>
+                                                        <li>19</li>
+                                                        <li>26</li>
+                                                        <li>87</li>
+                                                    </ul><!-- number-list end -->
+                                                </div>
+                                                <div class="right">
+                                                    <p>Contest No:</p>
+                                                    <span class="contest-num">B2T</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- winner-card end -->
+                                    <div class="btn-grp">
+                                        <a href="winner.html" class="btn-border">browse more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="money" role="tabpanel" aria-labelledby="money-tab">
+                            <div class="row mb-none-30">
+                                <div class="col-lg-4 mb-30">
+                                    <div class="number-check-wrapper">
+                                        <h3 class="title">Check My Numbers</h3>
+                                        <p>Are you holding on to a winning ticket? Here's an easy way to find out.</p>
+                                        <form class="check-number-form">
+                                            <input type="tel" class="form-control mt-30 mb-30" name="check-number5" id="check-number5" placeholder="Enter Contest No">
+                                            <div class="number-list-wrapper">
+                                                <p>Enter Your Lottery Numbers</p>
+                                                <div class="number-list mt-3 mb-3">
+                                                    <input type="text" name="text29" id="text29" placeholder="00">
+                                                    <input type="text" name="text30" id="text30" placeholder="00">
+                                                    <input type="text" name="text31" id="text31" placeholder="00">
+                                                    <input type="text" name="text32" id="text32" placeholder="00">
+                                                    <input type="text" name="text33" id="text33" placeholder="00">
+                                                    <input type="text" name="text34" id="text34" placeholder="00">
+                                                    <input type="text" name="text35" id="text35" placeholder="00">
+                                                </div><!-- number-list end -->
+                                                <select class="nice-select">
+                                                    <option>Last 7 days</option>
+                                                    <option>Last 6 days</option>
+                                                    <option>Last 5 days</option>
+                                                    <option>Last 4 days</option>
+                                                    <option>Last 3 days</option>
+                                                </select>
+                                                <div class="text-center mt-100">
+                                                    <button type="submit" class="cmn-btn">check my numbers</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 mb-30">
+                                    <div class="winner-card mb-30">
+                                        <div class="winner-card__thumb">
+                                            <img src="{{asset('/')}}fronts/assets/images/win-car/4.png" alt="image">
+                                        </div>
+                                        <div class="winner-card__content">
+                                            <div class="winner-thumb"><img src="{{asset('/')}}fronts/assets/images/winner/1.png" alt="image"></div>
+                                            <div class="content-top">
+                                                <div class="left">
+                                                    <h5>The Breeze Zodiac IX</h5>
+                                                </div>
+                                                <div class="right">
+                                                    <span>Draw took place on</span>
+                                                    <p>Saturday April 20, 2023</p>
+                                                </div>
+                                            </div>
+                                            <div class="content-bottom">
+                                                <div class="number-list-wrapper">
+                                                    <p>Winning Numbers:</p>
+                                                    <ul class="number-list mt-2">
+                                                        <li>11</li>
+                                                        <li>88</li>
+                                                        <li>23</li>
+                                                        <li>9</li>
+                                                        <li>19</li>
+                                                        <li>26</li>
+                                                        <li>87</li>
+                                                    </ul><!-- number-list end -->
+                                                </div>
+                                                <div class="right">
+                                                    <p>Contest No:</p>
+                                                    <span class="contest-num">B2T</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- winner-card end -->
+                                    <div class="winner-card mb-30">
+                                        <div class="winner-card__thumb">
+                                            <img src="{{asset('/')}}fronts/assets/images/win-car/2.png" alt="image">
+                                        </div>
+                                        <div class="winner-card__content">
+                                            <div class="winner-thumb"><img src="{{asset('/')}}fronts/assets/images/winner/2.png" alt="image"></div>
+                                            <div class="content-top">
+                                                <div class="left">
+                                                    <h5>The Breeze Zodiac IX</h5>
+                                                </div>
+                                                <div class="right">
+                                                    <span>Draw took place on</span>
+                                                    <p>Saturday April 20, 2023</p>
+                                                </div>
+                                            </div>
+                                            <div class="content-bottom">
+                                                <div class="number-list-wrapper">
+                                                    <p>Winning Numbers:</p>
+                                                    <ul class="number-list mt-2">
+                                                        <li>11</li>
+                                                        <li>88</li>
+                                                        <li>23</li>
+                                                        <li>9</li>
+                                                        <li>19</li>
+                                                        <li>26</li>
+                                                        <li>87</li>
+                                                    </ul><!-- number-list end -->
+                                                </div>
+                                                <div class="right">
+                                                    <p>Contest No:</p>
+                                                    <span class="contest-num">B2T</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- winner-card end -->
+                                    <div class="winner-card mb-30">
+                                        <div class="winner-card__thumb">
+                                            <img src="{{asset('/')}}fronts/assets/images/win-car/3.png" alt="image">
+                                        </div>
+                                        <div class="winner-card__content">
+                                            <div class="winner-thumb"><img src="{{asset('/')}}fronts/assets/images/winner/3.png" alt="image"></div>
+                                            <div class="content-top">
+                                                <div class="left">
+                                                    <h5>The Breeze Zodiac IX</h5>
+                                                </div>
+                                                <div class="right">
+                                                    <span>Draw took place on</span>
+                                                    <p>Saturday April 20, 2023</p>
+                                                </div>
+                                            </div>
+                                            <div class="content-bottom">
+                                                <div class="number-list-wrapper">
+                                                    <p>Winning Numbers:</p>
+                                                    <ul class="number-list mt-2">
+                                                        <li>11</li>
+                                                        <li>88</li>
+                                                        <li>23</li>
+                                                        <li>9</li>
+                                                        <li>19</li>
+                                                        <li>26</li>
+                                                        <li>87</li>
+                                                    </ul><!-- number-list end -->
+                                                </div>
+                                                <div class="right">
+                                                    <p>Contest No:</p>
+                                                    <span class="contest-num">B2T</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- winner-card end -->
+                                    <div class="winner-card mb-30">
+                                        <div class="winner-card__thumb">
+                                            <img src="{{asset('/')}}fronts/assets/images/win-car/4.png" alt="image">
+                                        </div>
+                                        <div class="winner-card__content">
+                                            <div class="winner-thumb"><img src="{{asset('/')}}fronts/assets/images/winner/4.png" alt="image"></div>
+                                            <div class="content-top">
+                                                <div class="left">
+                                                    <h5>The Breeze Zodiac IX</h5>
+                                                </div>
+                                                <div class="right">
+                                                    <span>Draw took place on</span>
+                                                    <p>Saturday April 20, 2023</p>
+                                                </div>
+                                            </div>
+                                            <div class="content-bottom">
+                                                <div class="number-list-wrapper">
+                                                    <p>Winning Numbers:</p>
+                                                    <ul class="number-list mt-2">
+                                                        <li>11</li>
+                                                        <li>88</li>
+                                                        <li>23</li>
+                                                        <li>9</li>
+                                                        <li>19</li>
+                                                        <li>26</li>
+                                                        <li>87</li>
+                                                    </ul><!-- number-list end -->
+                                                </div>
+                                                <div class="right">
+                                                    <p>Contest No:</p>
+                                                    <span class="contest-num">B2T</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- winner-card end -->
+                                    <div class="winner-card mb-30">
+                                        <div class="winner-card__thumb">
+                                            <img src="{{asset('/')}}fronts/assets/images/win-car/5.png" alt="image">
+                                        </div>
+                                        <div class="winner-card__content">
+                                            <div class="winner-thumb"><img src="{{asset('/')}}fronts/assets/images/winner/5.png" alt="image"></div>
+                                            <div class="content-top">
+                                                <div class="left">
+                                                    <h5>The Breeze Zodiac IX</h5>
+                                                </div>
+                                                <div class="right">
+                                                    <span>Draw took place on</span>
+                                                    <p>Saturday April 20, 2023</p>
+                                                </div>
+                                            </div>
+                                            <div class="content-bottom">
+                                                <div class="number-list-wrapper">
+                                                    <p>Winning Numbers:</p>
+                                                    <ul class="number-list mt-2">
+                                                        <li>11</li>
+                                                        <li>88</li>
+                                                        <li>23</li>
+                                                        <li>9</li>
+                                                        <li>19</li>
+                                                        <li>26</li>
+                                                        <li>87</li>
+                                                    </ul><!-- number-list end -->
+                                                </div>
+                                                <div class="right">
+                                                    <p>Contest No:</p>
+                                                    <span class="contest-num">B2T</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- winner-card end -->
+                                    <div class="winner-card mb-30">
+                                        <div class="winner-card__thumb">
+                                            <img src="{{asset('/')}}fronts/assets/images/win-car/6.png" alt="image">
+                                        </div>
+                                        <div class="winner-card__content">
+                                            <div class="winner-thumb"><img src="{{asset('/')}}fronts/assets/images/winner/6.png" alt="image"></div>
+                                            <div class="content-top">
+                                                <div class="left">
+                                                    <h5>The Breeze Zodiac IX</h5>
+                                                </div>
+                                                <div class="right">
+                                                    <span>Draw took place on</span>
+                                                    <p>Saturday April 20, 2023</p>
+                                                </div>
+                                            </div>
+                                            <div class="content-bottom">
+                                                <div class="number-list-wrapper">
+                                                    <p>Winning Numbers:</p>
+                                                    <ul class="number-list mt-2">
+                                                        <li>11</li>
+                                                        <li>88</li>
+                                                        <li>23</li>
+                                                        <li>9</li>
+                                                        <li>19</li>
+                                                        <li>26</li>
+                                                        <li>87</li>
+                                                    </ul><!-- number-list end -->
+                                                </div>
+                                                <div class="right">
+                                                    <p>Contest No:</p>
+                                                    <span class="contest-num">B2T</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- winner-card end -->
+                                    <div class="btn-grp">
+                                        <a href="winner.html" class="btn-border">browse more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- tab-content end -->
+                </div>
+            </div><!-- row end -->
+        </div>
+    </section>
+    <!-- latest winner section end  -->
+
+    <!-- testimonial section start -->
+    <section class="has-bg--shape pt-120 pb-120">
+        <div class="bg-shape">
+            <div class="round-shape d-sm-block d-none"><img src="{{asset('/')}}fronts/assets/images/elements/round-shape.png" alt="image"></div>
+            <div class="shape-1"></div>
+            <div class="shape-2"></div>
+            <div class="shape-3"></div>
+            <div class="shape-4"></div>
+            <div class="shape-5"></div>
+            <div class="shape-6"></div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-lg-9 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.3s">
+                    <div class="section-header text-center">
+                        <span class="section-sub-title">Testimonial</span>
+                        <h2 class="section-title">our Happy Customers All Around the World</h2>
+                        <p>With over 12 years of experience as the world’s leading online lottery service provider. Find out what our members have to say about us!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="testimonial-area bg_img" data-background="{{asset('/')}}fronts/assets/images/elements/testimonial-single.jpg">
+                        <div class="testimonial-slider">
+                            <div class="testimonial-single">
+                                <div class="testimonial-single__thumb">
+                                    <img src="{{asset('/')}}fronts/assets/images/winner/2.png" alt="image">
+                                </div>
+                                <div class="testimonial-single__content">
+                                    <h4 class="client-name">Dave Ford</h4>
+                                    <p>“Unbelievable this is a dream come true,no way would I ever think I would own a car like this” </p>
+                                    <div class="ratings">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div><!-- testimonial-single end -->
+                            <div class="testimonial-single">
+                                <div class="testimonial-single__thumb">
+                                    <img src="{{asset('/')}}fronts/assets/images/winner/1.png" alt="image">
+                                </div>
+                                <div class="testimonial-single__content">
+                                    <h4 class="client-name">Dave Ford</h4>
+                                    <p>“Unbelievable this is a dream come true,no way would I ever think I would own a car like this” </p>
+                                    <div class="ratings">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div><!-- testimonial-single end -->
+                        </div><!-- testimonial-slider end -->
+                    </div><!-- testimonial-area end -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- testimonial section end -->
+
+    <!-- support section start  -->
+    <section class="pb-120">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-header text-center">
+                        <span class="section-sub-title">Get in touch with our friendly support</span>
+                        <h2 class="section-title">Customer Support</h2>
+                        <p>Have a question or need help? Contact our friendly support team.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-none-30">
+                <div class="col-lg-6 mb-30 wow zoomIn" data-wow-duration="0.5s" data-wow-delay="0.3s">
+                    <div class="support-card">
+                        <div class="support-card__thumb">
+                            <img src="{{asset('/')}}fronts/assets/images/icon/support/1.png" alt="image">
+                        </div>
+                        <div class="support-card__content">
+                            <h3 class="support-card__title">Talk to our support team</h3>
+                            <p>Got a question about Lotteries? Get in touch with our friendly staff.</p>
+                            <div class="btn-grp justify-content-xl-start mt-3">
+                                <a href="tel:6564545" class="btn-border btn-sm text-capitalize">Call us <i class="fas fa-phone-alt"></i></a>
+                                <a href="https://pixner.net/cdn-cgi/l/email-protection#92f6faf6f8d2f5fff3fbfebcf1fdff" class="cmn-btn btn-sm text-capitalize">Email us <i class="far fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div><!-- support-card end -->
+                </div>
+                <div class="col-lg-6 mb-30 wow zoomIn" data-wow-duration="0.5s" data-wow-delay="0.5s">
+                    <div class="support-card">
+                        <div class="support-card__thumb">
+                            <img src="{{asset('/')}}fronts/assets/images/icon/support/2.png" alt="image">
+                        </div>
+                        <div class="support-card__content">
+                            <h3 class="support-card__title">Our Guide to Rifa</h3>
+                            <p>Check out our FAQs to see if we can help you out. </p>
+                            <div class="btn-grp justify-content-xl-start mt-3">
+                                <a href="faq.html" class="btn-border btn-sm text-capitalize">FAQs & Help</a>
+                            </div>
+                        </div>
+                    </div><!-- support-card end -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- support section end  -->
 @endsection

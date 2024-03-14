@@ -320,7 +320,7 @@
                                 <a href="{{route('contest.add')}}">Add Contest</a>
                             </li>
                             <li>
-                                <a href="{{route('privacy.manage')}}">Manage Contest</a>
+                                <a href="{{route('contest.manage')}}">Manage Contest</a>
                             </li>
                         </ul>
                     </div>

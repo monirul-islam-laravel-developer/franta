@@ -4,95 +4,136 @@
 @endsection
 @section('body')
 
-    <!-- ==========Breadcrumb-Section========== -->
-    <section class="breadcrumb-area">
-        <img class="contact" src="{{asset('/')}}fronts/assets/images/contact-b-icon.png" alt="">
+    <!-- inner-hero-section start -->
+    <div class="inner-hero-section style--six">
+        <div class="bg-shape"><img src="{{asset('/')}}fronts/assets/images/elements/inner-hero-shape-2.png" alt="image"></div>
         <div class="container">
-            <div class="content">
-                <h2 class="title">
-                    Contact
-                </h2>
-                <ul class="breadcrumb-list extra-padding">
-                    <li>
-                        <a href="{{route('home')}}">
-                            Home
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="{{route('cantact')}}">Contact</a>
-                    </li>
-                </ul>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="page-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#0">Pages</a></li>
+                        <li class="active">Contact</li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </section>
-    <!-- ==========Breadcrumb-Section========== -->
+    </div>
+    <!-- inner-hero-section end -->
 
-    <!-- ==========Contact-Section========== -->
-    <section class="contact">
+    <!-- contact section start -->
+    <section class="mt-minus-270 pb-120">
         <div class="container">
-            <div class="row justify-content-around">
-                <div class="col-lg-7">
-                    <div class="contact-box">
-                        <h4 class="title">
-                            Get In Touch
-                        </h4>
-                        <form action="#">
-                            <div class="form-group">
-                                <label>Your Name</label>
-                                <input type="text" placeholder="Enter Your Name">
-                            </div>
-                            <div class="form-group">
-                                <label>Your Email</label>
-                                <input type="email" placeholder="Enter Your Email ">
-                            </div>
-                            <div class="form-group last">
-                                <label>Your Message</label>
-                                <textarea placeholder="Enter Your Message"></textarea>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                <label class="custom-control-label" for="customCheck1">I agree to receive emails,
-                                    newsletters and promotional messages</label>
-                            </div>
-                            <button type="submit" class="custom-button1">Send Message</button>
-                        </form>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section-header text-center">
+                        <h2 class="section-title">Contact</h2>
+                        <p>We’d love to talk about how we can work together.Send us a message
+                            below and we’ll respond as soon as possible.</p>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="right-area">
-                        <div class="faq-block">
-                            <h4 class="title">Have questions?</h4>
-                            <p>
-                                If you have any questions or queries,
-                                our helpful support team will be
-                                more than happy to assist you.
-                            </p>
-                            <a href="#">
-                                Read F.A.Q <i class="fas fa-chevron-right"></i>
-                            </a>
-                        </div>
-                        <div class="contact-info">
-                            <div class="single-info">
-                                <img src="{{asset('/')}}fronts/assets/images/eicom.png" alt="">
-                                <div class="content">
-                                    <h4>Email Us</h4>
-                                    <p><a href="https://pixner.net/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a9c0c7cfc6e9efc8c7dddbc887cac6c4">[email&#160;protected]</a></p>
-                                </div>
+                <div class="col-lg-12">
+                    <div class="contact-wrapper">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="contact-form-wrapper">
+                                    <h3 class="title">Drop us a message</h3>
+                                    <form class="contact-form" id="contact_form_submit" method="POST">
+                                        <div class="form-group">
+                                            <label>Name <sup>*</sup></label>
+                                            <input type="text" name="name" id="name" placeholder="Enter Your FullName">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Email <sup>*</sup></label>
+                                            <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Subject <sup>*</sup></label>
+                                            <input type="text" name="subject" id="subject" placeholder="Enter Your Subject">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Message <sup>*</sup></label>
+                                            <textarea name="message" id="message" placeholder="Write Your Message"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="submit" class="cmn-btn w-100">send message</button>
+                                        </div>
+                                    </form><!-- contact-form e nd -->
+                                </div><!-- contact-form-wrapper end -->
                             </div>
-                            <div class="single-info">
-                                <img src="{{asset('/')}}fronts/assets/images/picon.png" alt="">
-                                <div class="content">
-                                    <h4>Call Us</h4>
-                                    <p>+1 (987) 435-32-11</p>
-                                    <p>+1 (987) 453-31-11</p>
+                            <div class="col-lg-6">
+                                <div class="contact-info-wrapper">
+                                    <div class="d-flex flex-wrap justify-content-between w-100">
+                                        <div class="contact-info">
+                                            <div class="contact-info__icon"><img src="{{asset('/')}}fronts/assets/images/icon/contact/1.png" alt="image"></div>
+                                            <div class="contact-info__content">
+                                                <p>Phone Number</p>
+                                                <span>+0123 456789</span>
+                                            </div>
+                                        </div><!-- contact-info end -->
+                                        <div class="contact-info">
+                                            <div class="contact-info__icon"><img src="{{asset('/')}}fronts/assets/images/icon/contact/2.png" alt="image"></div>
+                                            <div class="contact-info__content">
+                                                <p>Email</p>
+                                                <span><a href="https://pixner.net/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="dab3b4bcb59aa8b3bcbbf4b9b5b7">[email&#160;protected]</a></span>
+                                            </div>
+                                        </div><!-- contact-info end -->
+                                    </div>
+                                    <div class="contact-thumb"><img src="{{asset('/')}}fronts/assets/images/elements/contact.png" alt="image"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="row pt-120 mb-none-30">
+                <div class="col-lg-3 col-sm-6 mb-30">
+                    <div class="social-card">
+                        <div class="social-card__icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                        <div class="social-card__content">
+                            <h3>130k</h3>
+                            <span>Followers</span>
+                        </div>
+                    </div><!-- social-card end -->
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-30">
+                    <div class="social-card">
+                        <div class="social-card__icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="social-card__content">
+                            <h3>35k</h3>
+                            <span>Members</span>
+                        </div>
+                    </div><!-- social-card end -->
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-30">
+                    <div class="social-card">
+                        <div class="social-card__icon">
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                        <div class="social-card__content">
+                            <h3>47k</h3>
+                            <span>Followers</span>
+                        </div>
+                    </div><!-- social-card end -->
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-30">
+                    <div class="social-card">
+                        <div class="social-card__icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="social-card__content">
+                            <h3>29k</h3>
+                            <span>Subscribers</span>
+                        </div>
+                    </div><!-- social-card end -->
+                </div>
+            </div>
         </div>
     </section>
+    <!-- contact section end -->
 
 @endsection
