@@ -23,6 +23,9 @@ use App\Http\Controllers\FrontAboutUs;
 use App\Http\Controllers\FrontLottaryController;
 use App\Http\Controllers\ContestController;
 use App\Http\Controllers\CartController;
+use App\Http\Controllers\CheckOutController;
+use App\Http\Controllers\UserAuthController;
+use App\Http\Controllers\UserDashboardController;
 
 use App\Models\RoleRoute;
 
@@ -61,7 +64,31 @@ Route::get('/contest', [FrontLottaryController::class, 'index'])->name('contest'
 
 Route::get('/contest-detail/{id}', [FrontLottaryController::class, 'detail'])->name('contest-detail');
 
+Route::get('/add-to-cart{id}', [CartController::class, 'cartAdd'])->name('add-to-cart');
+Route::post('/update-cart/{id}', [CartController::class, 'update'])->name('update.cart');
+Route::get('/delete-cart-contest/{id}', [CartController::class, 'remove'])->name('delete-cart-contest');
 Route::get('/cart-page', [CartController::class, 'index'])->name('cart-page');
+
+Route::get('/checkout-page', [CheckOutController::class, 'index'])->name('checkout-page');
+Route::post('/new-order', [CheckoutController::class, 'newOrder'])->name('new.order');
+
+Route::post('/user-auth-logout', [UserAuthController::class, 'logOut'])->name('userAuth.logout');
+
+Route::middleware(['user.auth.logout'])->group(function (){
+    Route::post('/image-upload', [UserAuthController::class, 'uploadImage'])->name('upload.image');
+
+    Route::get('/user-dashboard', [UserDashboardController::class, 'dashboard'])->name('userAuth.dashboard');
+    Route::get('/personal-information', [UserDashboardController::class, 'index'])->name('personal.information');
+    Route::get('/transaction', [UserDashboardController::class, 'transaction'])->name('transaction');
+    Route::get('/order-history', [UserDashboardController::class, 'orderHistory'])->name('order.history');
+
+    Route::get('/confirm-order/{id}', [CheckoutController::class, 'confirmOrder'])->name('confirm.order');
+
+    Route::post('/make-payment', [CheckoutController::class, 'makePayment'])->name('make.payment');
+
+    Route::post('/update-personal-info', [UserDashboardController::class, 'update'])->name('update.personal');
+    Route::post('/update-password-info', [UserDashboardController::class, 'updatePass'])->name('user.password');
+});
 
 
 Route::get('/error', function () {

@@ -189,10 +189,18 @@
                                 <span class="total__amount">0.00</span>
                                 <a href="{{route('cart-page')}}"  class="amount__btn">
                                     <i class="las la-shopping-basket"></i>
-                                    <span class="cart__num">08</span>
+                                    <span class="cart__num">{{count($cartContests)}}</span>
                                 </a>
                             </div>
-                            <a href="#0" class="user__btn" data-bs-toggle="modal" data-bs-target="#loginModal"><i class="las la-user"></i></a>
+                            @if(Session::get('userAuth_id'))
+                                <a href="{{route('userAuth.dashboard')}}" class="user__btn">
+                                    <i class="las la-user"></i>
+                                </a>
+                            @else
+                                <a href="#0" class="user__btn" data-bs-toggle="modal" data-bs-target="#loginModal">
+                                    <i class="las la-user"></i>
+                                </a>
+                            @endif
                         </div>
                     </div>
                 </div>

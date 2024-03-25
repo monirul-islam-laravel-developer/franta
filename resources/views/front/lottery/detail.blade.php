@@ -30,15 +30,14 @@
                         <div class="clock" data-clock="2023/12/10"></div>
                     </div><!-- clock-wrapper end -->
                 </div>
+                <form action="{{route('add-to-cart',['id'=>$contest->id])}}">
                 <div class="col-lg-12">
                     <div class="contest-cart">
                         <div class="contest-cart__left">
                             <div class="contest-cart__slider-area">
                                 <div class="contest-cart__thumb-slider">
-                                    <div class="single-slide"><img src="{{asset('/')}}fronts/assets/images/contest/b1.png" alt="image"></div>
-                                    <div class="single-slide"><img src="{{asset('/')}}fronts/assets/images/contest/b1.png" alt="image"></div>
-                                    <div class="single-slide"><img src="{{asset('/')}}fronts/assets/images/contest/b1.png" alt="image"></div>
-                                    <div class="single-slide"><img src="{{asset('/')}}fronts/assets/images/contest/b1.png" alt="image"></div>
+                                    <div class="single-slide"><img src="{{asset($contest->image)}}" alt="image"></div>
+
                                 </div><!-- contest-cart__thumb-slider end -->
                                 <div class="contest-cart__nav-slider">
 
@@ -50,7 +49,7 @@
                             <h3 class="contest-name">{{$contest->title}}</h3>
                             <p>This competition has a maximum of {{$contest->qty}} entries.</p>
                             <div class="contest-num">Contest no: <span>{{$contest->code}}</span></div>
-                            <h4>Tickets Sold</h4>
+                            <h4>Tickets Sold</h4>`
                             <div class="ticket-amount">
                                 <span class="left"></span>
                                 <span class="right">29994</span>
@@ -64,13 +63,14 @@
                                 <small>Per ticket</small>
                             </div>
                             <div class="d-flex flex-wrap align-items-center mb-30">
-                                <div class="select-quantity">
-                                    <span class="caption">Quantity</span>
+                                <div class="select-quantity" >
+                                    <span class="caption" >Quantity</span>
                                     <div class="quantity">
-                                        <input type="number" min="1" max="100" step="1" value="1" >
+                                        <input type="number" name="qty" min="1" max="100" step="1" value="1" >
                                     </div>
                                 </div><!-- select-quantity end -->
-                                <div class="mt-sm-0 mt-3"><a href="{{route('cart-page')}}" class="cmn-btn style--three">buy tickets</a></div>
+                                <div class="mt-sm-0 mt-3">
+                                    <button type="submit" class="cmn-btn style--three">buy tickets</button></div>
                             </div>
                             <ul class="social-links align-items-center">
                                 <li>Share :</li>
@@ -109,6 +109,7 @@
                         </div><!-- tab-content end -->
                     </div><!-- contest-description end -->
                 </div>
+                </form>
             </div>
         </div>
     </section>
