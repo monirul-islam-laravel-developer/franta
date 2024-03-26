@@ -7,6 +7,7 @@ use App\Models\Ticket;
 use App\Models\Transaction;
 use App\Models\UserAuth;
 use Illuminate\Http\Request;
+use Session;
 
 class UserDashboardController extends Controller
 {

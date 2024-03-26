@@ -50,7 +50,8 @@
                     <div class="user-action-card">
                         <ul class="user-action-list">
                             <li class="active">
-                                <a href="{{route('userAuth.dashboard')}}">My Tickets <span class="badge">{{$ticketCount}}</span></a></li>
+                                <a href="{{route('userAuth.dashboard')}}">My Tickets <span class="badge"></span></a></li>
+{{--                            {{$ticketCount}}--}}
                             <li><a href="{{route('personal.information')}}">Personal Information</a></li>
                             <li><a href="{{route('transaction')}}">Transactions</a></li>
                             <li><a href="{{route('order.history')}}">Order History</a></li>
@@ -140,7 +141,7 @@
                                 // Add an event listener to the button
                                 document.getElementById('browseContestBtn').addEventListener('click', function() {
                                     // Change the window location to the specified route
-                                    window.location.href = "{{ route('all.contest') }}";
+                                    window.location.href = "{{ route('contest') }}";
                                 });
                             </script>
                         </div>
